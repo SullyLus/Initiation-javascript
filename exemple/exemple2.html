@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const nom="Dela";
+        const prenom="Sully";
+        var langue = "en";
+
+        function afficher(){
+            console.log("coucou");
+            let tmp = "";
+            if (langue == "fr"){
+                tmp="bjr";
+                console.log('langue changée= ' + tmp);
+            }
+            else if(langue=="en") {
+                tmp = "hello";
+                console.log('langue changée= ' + tmp);
+            }
+            console.log(tmp);
+            alert (tmp + " " + prenom + " " + nom + " !"); 
+        }
+    </script>
+</head>
+<body>
+    <a href="#" onclick="afficher()">Hello</a>
+    <a href="#" onclick="langue='fr'">français</a>
+    <a href="#" onclick="langue='en'">Anglais</a>
+    
+</body>
+</html>

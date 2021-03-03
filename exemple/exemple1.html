@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function definelinks()
+        {
+            const links = document.getElementsByTagName("a");
+            for (var i=0; i < links.length ; i++) { 
+                links.item(i).onclick = function() {return confirm("etes vous surs ?"); };
+            }
+        }
+    </script>
+</head>
+<body onload="definelinks()">
+    <p>Visitez le site du <a href="https://lesoir.be"> journal du soir</a></p>
+    <h2>nouvel exemple</h2>
+    <a href="javascript:<p>Hello '+nom +' ' + prenom +   ' ! </p> ' "">Cliquez ici pour dire bjr</a>
+    </body>
+</html>
